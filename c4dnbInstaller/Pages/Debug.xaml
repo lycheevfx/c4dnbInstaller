@@ -1,0 +1,11 @@
+﻿<Page x:Class="c4dnbInstaller.Pages.Debug"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:c4dnbInstaller.Pages"
+      xmlns:data="clr-namespace:c4dnbInstaller.Data"
+      xmlns:hc="https://handyorg.github.io/handycontrol"
+      mc:Ignorable="d">
+    <TextBox TextWrapping="Wrap" IsReadOnly="True" Loaded="TextBox_Loaded" FontSize="{StaticResource SubHeadFontSize}" MaxHeight="300" VerticalScrollBarVisibility="Auto"/>
+</Page>

@@ -1,0 +1,62 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="Title">C4DNBInstaller</sys:String>
+    <sys:String x:Key="Setup">Setup</sys:String>
+    <sys:String x:Key="Debug">Debug</sys:String>
+    <sys:String x:Key="C4DPath">C4D Root Directory</sys:String>
+    <sys:String x:Key="WhereC4DPath">Where is the C4D root directory</sys:String>
+    <sys:String x:Key="Setting">Setting</sys:String>
+    <sys:String x:Key="Back">Back</sys:String>
+    <sys:String x:Key="Language">Language</sys:String>
+    <sys:String x:Key="en-US">English</sys:String>
+    <sys:String x:Key="en-USNotes">&#160;version</sys:String>
+    <sys:String x:Key="zh-CN">Chinese</sys:String>
+    <sys:String x:Key="zh-CNNotes">&#160;version</sys:String>
+    <sys:String x:Key="Both">Both</sys:String>
+    <sys:String x:Key="BothNotes">&#160;version</sys:String>
+    <sys:String x:Key="install">install</sys:String>
+
+    <!--设置-->
+    <sys:String x:Key="StickyOnTop">Sticky On Top</sys:String>
+    <sys:String x:Key="ExitAfterSuccessfulInstallation">Exit after successful installation</sys:String>
+    <sys:String x:Key="StartC4DAfterSuccessfulInstallation">Start C4D after successful installation</sys:String>
+    <sys:String x:Key="Skin">Skin</sys:String>
+    <sys:String x:Key="DeleteOriginalStrings">Delete original strings</sys:String>
+    <sys:String x:Key="HomePage">HomePage</sys:String>
+    <sys:String x:Key="QQGroup">QQGroup</sys:String>
+    <sys:String x:Key="Email">Email</sys:String>
+    <!--皮肤-->
+    <sys:String x:Key="Light">Light</sys:String>
+    <sys:String x:Key="Dark">Dark</sys:String>
+    <sys:String x:Key="Violet">Violet</sys:String>
+    <!--语言-->
+    <sys:String x:Key="Chinese">Chinese</sys:String>
+    <sys:String x:Key="English">English</sys:String>
+    <sys:String x:Key="Japanese">Japanese</sys:String>
+    <sys:String x:Key="Korea">Korea</sys:String>
+
+    <!--提示-->
+    <sys:String x:Key="OK">OK</sys:String>
+    <sys:String x:Key="WhatIsTheC4DRootDirectory">Help</sys:String>
+    <sys:String x:Key="InstallationFailed">Installation failed</sys:String>
+    <sys:String x:Key="InstalledSuccessfully">Installed successfully</sys:String>
+    <sys:String x:Key="False">No</sys:String>
+    <sys:String x:Key="True">Yes</sys:String>
+    <sys:String x:Key="RunAsAdministrator">Run as administrator:</sys:String>
+    <sys:String x:Key="UnableToFindThePluginsFolder">Unable to find the 'plugins' folder</sys:String>
+    <sys:String x:Key="UnableToFindThePlugin">Unable to find any plugin directory in the 'plugins' directory</sys:String>
+    <sys:String x:Key="PluginName">Plugin Name:</sys:String>
+    <sys:String x:Key="AboutToInstallTo">About to install to</sys:String>
+    <sys:String x:Key="C4DVersion">Cinema 4D Version:</sys:String>
+    <sys:String x:Key="C4DRootDirectory">Cinema 4D Path:</sys:String>
+    <sys:String x:Key="CreatingPluginsDirectory">Creating Plugins Directory...</sys:String>
+    <sys:String x:Key="CopyingPlugin">Copying Plugin...</sys:String>
+    <sys:String x:Key="RemovingOriginalLanguagePack">Removing original language pack...</sys:String>
+    <sys:String x:Key="CopyingLanguagePack">Copying language pack...</sys:String>
+    <sys:String x:Key="AtLeastOneC4DVersionMustBeAdded">At least one Cinema 4D version must be added</sys:String>
+    <sys:String x:Key="NotAValidC4DRootDirectory">Not a valid Cinema 4D root directory,Alternatively, you can drag and drop 'Cinema 4D.exe' into the current window.</sys:String>
+    <sys:String x:Key="YouHaveAddedThisVersionOfC4D">You have added this version of Cinema 4D</sys:String>
+    <sys:String x:Key="DetectedC4DProcess">You have added this version of C4D</sys:String>
+</ResourceDictionary>

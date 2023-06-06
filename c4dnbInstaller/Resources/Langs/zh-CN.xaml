@@ -1,0 +1,62 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="Title">C4DNB插件安装器</sys:String>
+    <sys:String x:Key="Setup">安装</sys:String>
+    <sys:String x:Key="Debug">结果</sys:String>
+    <sys:String x:Key="C4DPath">C4D版本(根目录)</sys:String>
+    <sys:String x:Key="WhereC4DPath">什么是C4D根目录？它在哪？</sys:String>
+    <sys:String x:Key="Setting">设置</sys:String>
+    <sys:String x:Key="Back">返回</sys:String>
+    <sys:String x:Key="Language">语言</sys:String>
+    <sys:String x:Key="en-US">英文</sys:String>
+    <sys:String x:Key="en-USNotes">&#160;version</sys:String>
+    <sys:String x:Key="zh-CN">中文</sys:String>
+    <sys:String x:Key="zh-CNNotes">&#160;version</sys:String>
+    <sys:String x:Key="Both">双语</sys:String>
+    <sys:String x:Key="BothNotes">&#160;version</sys:String>
+    <sys:String x:Key="install">安装</sys:String>
+
+    <!--设置-->
+    <sys:String x:Key="StickyOnTop">窗口置顶</sys:String>
+    <sys:String x:Key="ExitAfterSuccessfulInstallation">安装成功后关闭该程序</sys:String>
+    <sys:String x:Key="StartC4DAfterSuccessfulInstallation">安装成功后启动C4D</sys:String>
+    <sys:String x:Key="Skin">皮肤</sys:String>
+    <sys:String x:Key="DeleteOriginalStrings">汉化前删除原有语言包</sys:String>
+    <sys:String x:Key="HomePage">主页</sys:String>
+    <sys:String x:Key="QQGroup">QQ群</sys:String>
+    <sys:String x:Key="Email">邮箱</sys:String>
+    <!--皮肤-->
+    <sys:String x:Key="Light">明调</sys:String>
+    <sys:String x:Key="Dark">暗调</sys:String>
+    <sys:String x:Key="Violet">明紫</sys:String>
+    <!--语言-->
+    <sys:String x:Key="Chinese">中文</sys:String>
+    <sys:String x:Key="English">English</sys:String>
+    <sys:String x:Key="Japanese">日本語</sys:String>
+    <sys:String x:Key="Korea">한국어</sys:String>
+
+    <!--提示-->
+    <sys:String x:Key="OK">确定</sys:String>
+    <sys:String x:Key="WhatIsTheC4DRootDirectory">什么是C4D根目录？</sys:String>
+    <sys:String x:Key="InstallationFailed">安装失败</sys:String>
+    <sys:String x:Key="InstalledSuccessfully">安装成功</sys:String>
+    <sys:String x:Key="False">否</sys:String>
+    <sys:String x:Key="True">是</sys:String>
+    <sys:String x:Key="RunAsAdministrator">该程序是否以管理员身份运行:</sys:String>
+    <sys:String x:Key="UnableToFindThePluginsFolder">没能找到要拷贝的插件，可能是因为您更改或删除了该程序的文件夹名称，也可能是您没有对我进行解压。</sys:String>
+    <sys:String x:Key="UnableToFindThePlugin">没能找到要拷贝的插件，可能是因为您更改或删除了该程序的文件夹名称，或者请与站长联系。</sys:String>
+    <sys:String x:Key="PluginName">插件名称:</sys:String>
+    <sys:String x:Key="AboutToInstallTo">即将安装到</sys:String>
+    <sys:String x:Key="C4DVersion">C4D版本:</sys:String>
+    <sys:String x:Key="C4DRootDirectory">C4D根目录:</sys:String>
+    <sys:String x:Key="CreatingPluginsDirectory">正在创建plugins目录...</sys:String>
+    <sys:String x:Key="CopyingPlugin">正在拷贝插件...</sys:String>
+    <sys:String x:Key="RemovingOriginalLanguagePack">正在删除原有语言包...</sys:String>
+    <sys:String x:Key="CopyingLanguagePack">正在拷贝语言包...</sys:String>
+    <sys:String x:Key="AtLeastOneC4DVersionMustBeAdded">至少要添加一个C4D版本</sys:String>
+    <sys:String x:Key="NotAValidC4DRootDirectory">不是有效的C4D根目录，或者您也可以将“Cinema 4D.exe”拖拽到当前窗口中。</sys:String>
+    <sys:String x:Key="YouHaveAddedThisVersionOfC4D">您已经添加了该版本的C4D</sys:String>
+    <sys:String x:Key="DetectedC4DProcess">检测到C4D正在运行中，请关闭Cinema 4D后重试。</sys:String>
+</ResourceDictionary>

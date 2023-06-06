@@ -1,0 +1,70 @@
+﻿<Page x:Class="c4dnbInstaller.Pages.Setting"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:c4dnbInstaller.Pages"
+      xmlns:data="clr-namespace:c4dnbInstaller.Data"
+      xmlns:hc="https://handyorg.github.io/handycontrol"
+      mc:Ignorable="d">
+    <Page.Resources>
+        <LinearGradientBrush x:Key="BrushBanner" StartPoint="0,0" EndPoint="1,1">
+            <LinearGradientBrush.GradientStops>
+                <!--开始为蓝色 -->
+                <GradientStop Offset="0" Color="#00e3ff" />
+                <!--结尾是红色 -->
+                <GradientStop Offset="1" Color="{DynamicResource PrimaryColor}" />
+            </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+    </Page.Resources>
+    <hc:ScrollViewer>
+        <hc:UniformSpacingPanel Spacing="10" ItemVerticalAlignment="Top" ChildWrapping="Wrap">
+            <hc:ComboBox FontSize="{StaticResource SubHeadFontSize}" hc:TitleElement.Title="{DynamicResource Skin}" SelectionChanged="ComboBoxSkin_SelectionChanged" Loaded="ComboBoxSkin_Loaded">
+                <ComboBoxItem Content="{DynamicResource Light}" Tag="Default"/>
+                <ComboBoxItem Content="{DynamicResource Dark}" Tag="Dark"/>
+                <ComboBoxItem Content="{DynamicResource Violet}" Tag="Violet"/>
+            </hc:ComboBox>
+            <hc:ComboBox FontSize="{StaticResource SubHeadFontSize}" hc:TitleElement.Title="{DynamicResource Language}" Loaded="ComboBoxLanguage_Loaded">
+                <ComboBoxItem Content="中文" Tag="zh-CN" Selected="ComboBoxLanguage_Selected"/>
+                <ComboBoxItem Content="English" Tag="en-US" Selected="ComboBoxLanguage_Selected"/>
+            </hc:ComboBox>
+            <Border Style="{StaticResource BorderRegion}">
+                <hc:UniformSpacingPanel Spacing="10" ChildWrapping="Wrap">
+                    <CheckBox Style="{StaticResource CheckBoxBaseStyle}" FontSize="{StaticResource SubHeadFontSize}" Content="{DynamicResource StickyOnTop}" IsChecked="{Binding Path=StickyOnTop, Source={x:Static data:GlobalData.Config}}" Click="CheckBoxStickyOnTop_Click"/>
+                    <CheckBox Style="{StaticResource CheckBoxBaseStyle}" FontSize="{StaticResource SubHeadFontSize}" Content="{DynamicResource DeleteOriginalStrings}" IsChecked="{Binding Path=DeleteOriginalStrings, Source={x:Static data:GlobalData.Config}}"/>
+                    <CheckBox Style="{StaticResource CheckBoxBaseStyle}" FontSize="{StaticResource SubHeadFontSize}" Content="{DynamicResource ExitAfterSuccessfulInstallation}" IsChecked="{Binding Path=ExitAfterSuccessfulInstallation, Source={x:Static data:GlobalData.Config}}"/>
+                    <CheckBox Style="{StaticResource CheckBoxBaseStyle}" FontSize="{StaticResource SubHeadFontSize}" Content="{DynamicResource StartC4DAfterSuccessfulInstallation}" IsChecked="{Binding Path=StartC4DAfterSuccessfulInstallation, Source={x:Static data:GlobalData.Config}}"/>
+                </hc:UniformSpacingPanel>
+            </Border>
+            <Border Padding="10" Background="{DynamicResource RegionBrush}" Style="{StaticResource BorderRegion}">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel.Resources>
+                            <Style TargetType="Button" BasedOn="{StaticResource ButtonDefault}">
+                                <Setter Property="Margin" Value="5"/>
+                                <Setter Property="Padding" Value="10,6"/>
+                                <Setter Property="Height" Value="auto"/>
+                                <Setter Property="FontSize" Value="{StaticResource SubHeadFontSize}"/>
+                                <Setter Property="Cursor" Value="Hand"/>
+                            </Style>
+                        </StackPanel.Resources>
+                        <Button Content="{DynamicResource HomePage}" Tag="https://c4dnb.com" Click="ButtonLink_Click"/>
+                        <Button Content="Github" Tag="" Click="ButtonLink_Click"/>
+                        <!--<Button Content="Github"/>-->
+
+
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <hc:Shield FontSize="{StaticResource SubHeadFontSize}" Subject="{DynamicResource QQGroup}" Status="201296388" Color="#1182c3" Margin="5"/>
+                        <hc:Shield FontSize="{StaticResource SubHeadFontSize}" Subject="{DynamicResource Email}" Status="624522220@qq.com" Color="#1182c3" Margin="5"/>
+                    </StackPanel>
+                </StackPanel>
+
+            </Border>
+            <Border Padding="4" Background="{DynamicResource RegionBrush}" Style="{StaticResource BorderRegion}">
+                <Button Style="{StaticResource ButtonIcon}" IsHitTestVisible="False" hc:IconElement.Geometry="{StaticResource svgBanner}" Height="70" Foreground="{StaticResource BrushBanner}"/>
+            </Border>
+        </hc:UniformSpacingPanel>
+    </hc:ScrollViewer>
+
+</Page>
