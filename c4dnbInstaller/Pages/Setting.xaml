@@ -49,7 +49,7 @@
                             </Style>
                         </StackPanel.Resources>
                         <Button Content="{DynamicResource HomePage}" Tag="https://c4dnb.com" Click="ButtonLink_Click"/>
-                        <Button Content="Github" Tag="" Click="ButtonLink_Click"/>
+                        <Button Content="Github" Tag="https://github.com/lycheevfx" Click="ButtonLink_Click"/>
                         <!--<Button Content="Github"/>-->
 
 
