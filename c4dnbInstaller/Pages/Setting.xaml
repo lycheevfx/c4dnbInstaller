@@ -32,7 +32,6 @@
                 <hc:UniformSpacingPanel Spacing="10" ChildWrapping="Wrap">
                     <CheckBox Style="{StaticResource CheckBoxBaseStyle}" FontSize="{StaticResource SubHeadFontSize}" Content="{DynamicResource StickyOnTop}" IsChecked="{Binding Path=StickyOnTop, Source={x:Static data:GlobalData.Config}}" Click="CheckBoxStickyOnTop_Click"/>
                     <CheckBox Style="{StaticResource CheckBoxBaseStyle}" FontSize="{StaticResource SubHeadFontSize}" Content="{DynamicResource DeleteOriginalStrings}" IsChecked="{Binding Path=DeleteOriginalStrings, Source={x:Static data:GlobalData.Config}}"/>
-                    <CheckBox Style="{StaticResource CheckBoxBaseStyle}" FontSize="{StaticResource SubHeadFontSize}" Content="{DynamicResource ExitAfterSuccessfulInstallation}" IsChecked="{Binding Path=ExitAfterSuccessfulInstallation, Source={x:Static data:GlobalData.Config}}"/>
                     <CheckBox Style="{StaticResource CheckBoxBaseStyle}" FontSize="{StaticResource SubHeadFontSize}" Content="{DynamicResource StartC4DAfterSuccessfulInstallation}" IsChecked="{Binding Path=StartC4DAfterSuccessfulInstallation, Source={x:Static data:GlobalData.Config}}"/>
                 </hc:UniformSpacingPanel>
             </Border>
