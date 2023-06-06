@@ -164,10 +164,21 @@ namespace c4dnbInstaller.Pages
                             if (Directory.Exists(targetPath)) { Directory.Delete(targetPath, true); }
 
                             Helper.DirectoryCopy(Installation.Language.Path, targetPath);
+                            
+                            if (GlobalData.Config.StartC4DAfterSuccessfulInstallation)
+                            {
+                                Process p = Process.Start(c4dInfo.Path);
+                                p.WaitForExit();
+                            }
                         }
                     }
 
                     TextBoxInsertContent("InstalledSuccessfully");
+                    
+                    if (GlobalData.Config.ExitAfterSuccessfulInstallation)
+                    {
+                        GlobalData.MainWindowH.Close();
+                    }
                 });
             }
             catch (Exception e2)
