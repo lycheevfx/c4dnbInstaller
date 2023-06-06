@@ -10,7 +10,6 @@ namespace c4dnbInstaller.Data
         public string Lang { get; set; } = "zh-CN";
         public SkinType Skin { get; set; }
         public bool StickyOnTop { get; set; } = false;
-        public bool ExitAfterSuccessfulInstallation { get; set; } = false;
         public bool StartC4DAfterSuccessfulInstallation { get; set; } = false;
         public bool DeleteOriginalStrings { get; set; } = false;
     }
